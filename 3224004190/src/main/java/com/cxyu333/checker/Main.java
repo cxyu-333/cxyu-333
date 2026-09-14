@@ -20,7 +20,7 @@ public class Main {
             String origText = FileUtil.readFile(origFile);
             String copyText = FileUtil.readFile(copyFile);
             //计算相似度
-            double similarity = SimilarityCalculator.calculateSimilarity(origText, copyText);
+            double similarity = SimilarityCalculator.calculateSimilarity(origText, copyText, 2);
             //输出结果
             FileUtil.writeAnswer(answerFile, similarity);
         }catch (IOException e){
