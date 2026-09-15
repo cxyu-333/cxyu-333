@@ -5,8 +5,8 @@ import java.io.IOException;
 public class PerformanceTest {
     public static void main(String[] args) throws IOException {
         String baseDir = "3224004190/";
-        String origText = FileUtil.readFile(baseDir + "test/orig.txt");
-        String copyText = FileUtil.readFile(baseDir + "test/orig_0.8_add.txt");
+        String origText = FileUtil.readFile(baseDir + "src/test/orig.txt");
+        String copyText = FileUtil.readFile(baseDir + "src/test/orig_0.8_add.txt");
 
         int iterations = 10000;
 
