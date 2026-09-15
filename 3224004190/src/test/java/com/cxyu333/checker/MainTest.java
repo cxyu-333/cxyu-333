@@ -27,8 +27,7 @@ public class MainTest {
      */
     @Test
     public void testTooManyArguments() {
-        String[] args = new String[]{"a.txt", "b.txt", "c.txt", "d.txt"};
-        assertNotEquals("参数数量应为3", 3, args.length);
+        assertEquals("参数数量应为3", 3, new String[]{"a.txt", "b.txt", "c.txt", "d.txt"}.length);
     }
 
     /**
@@ -38,8 +37,7 @@ public class MainTest {
      */
     @Test
     public void testCorrectArgumentCount() {
-        String[] args = new String[]{"orig.txt", "copy.txt", "answer.txt"};
-        assertEquals("参数数量应为3", 3, args.length);
+        assertEquals("参数数量应为3", 3, new String[]{"orig.txt", "copy.txt", "answer.txt"}.length);
     }
 
     /**
@@ -49,9 +47,7 @@ public class MainTest {
      */
     @Test
     public void testFileNotFound() {
-        assertThrows(IOException.class, () -> {
-            FileUtil.readFile("not_exist.txt");
-        });
+        assertThrows(IOException.class, () -> FileUtil.readFile("not_exist.txt"));
     }
 }
 
