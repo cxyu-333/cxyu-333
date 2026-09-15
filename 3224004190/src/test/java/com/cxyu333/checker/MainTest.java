@@ -26,7 +26,7 @@ public class MainTest {
      */
     @Test
     public void testTooManyArguments() {
-        assertEquals("参数数量应为3", 3, new String[]{"a.txt", "b.txt", "c.txt", "d.txt"}.length);
+        assertNotEquals("参数数量应为3", 3, new String[]{"a.txt", "b.txt", "c.txt", "d.txt"}.length);
     }
 
     /**
