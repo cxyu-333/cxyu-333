@@ -1,11 +1,12 @@
 package com.cxyu333.checker;
 
-
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * @author cxyu
+ */
 public class FileUtil {
 
     /**
@@ -22,6 +23,5 @@ public class FileUtil {
         String result = String.format("%.2f", similarity);
         Files.write(Paths.get(filePath), result.getBytes());
     }
-
 }
 

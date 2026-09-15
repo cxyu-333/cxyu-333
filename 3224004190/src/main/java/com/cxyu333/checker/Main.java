@@ -1,8 +1,10 @@
 package com.cxyu333.checker;
 
-
 import java.io.IOException;
 
+/**
+ * @author cxyu
+ */
 public class Main {
     public static void main(String[] args) {
         //检查命令行参数

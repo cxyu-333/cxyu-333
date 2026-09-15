@@ -138,6 +138,5 @@ public class SimilarityCalculatorTest {
         double result = SimilarityCalculator.calculateSimilarity("Hello", "hello", 2);
         assertNotEquals("大小写应产生不同结果", 1.0, result, 0.001);
     }
-
 }
 
