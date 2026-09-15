@@ -1,0 +1,11 @@
+# 编译产物
+target/
+*.class
+*.jar
+
+# IDEA 配置
+.idea/
+*.iml
+
+# Maven 缓存
+maven-status/
