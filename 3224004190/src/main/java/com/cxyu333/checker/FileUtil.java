@@ -2,6 +2,7 @@ package com.cxyu333.checker;
 
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -11,7 +12,7 @@ public class FileUtil {
      * 读取文件内容
      */
     public static String readFile(String filePath) throws IOException {
-        return new String(Files.readAllBytes(Paths.get(filePath)),"UTF-8");
+        return Files.readString(Paths.get(filePath));
     }
 
     /**
